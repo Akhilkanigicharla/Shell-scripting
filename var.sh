@@ -12,3 +12,5 @@ ADD=$((6+7+9))
 BIG=$((10+20*50/3))
 
 echo  ADDBIG= $BIG + $ADD
+
+please enter the valu X =$x
