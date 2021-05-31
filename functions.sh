@@ -1,7 +1,8 @@
 #!/bin/bash
 
 SAMPLE() {
-  echo hello world to sample function  a = $a
+  echo hello world to sample function
+   echo value of a = $a
   b=20
 }
 a=10
