@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SAMPLE(){
+SAMPLE() {
   echo hello world to sample function  a = $a
   b=20
 }
