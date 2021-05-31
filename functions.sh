@@ -1,5 +1,5 @@
 #!/bin/bash
- export  a=hello akhilkanigicharla
+ export  a=helloakhilkanigicharla
 SAMPLE(){
   echo hello world to sample function $a
 }
