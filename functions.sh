@@ -1,9 +1,12 @@
 #!/bin/bash
- export  a=helloakhilkanigicharla
-SAMPLE(){
-  echo hello world to sample function $a
-}
 
+SAMPLE(){
+  echo hello world to sample function  a = $a
+  b=20
+}
+a=10
 SAMPLE
+echo value of b = $b
+
 
 
