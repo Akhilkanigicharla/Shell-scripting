@@ -1,13 +1,10 @@
 #!/bin/bash
 
-echo -e "\e[1m---------------------------------------------------"
-echo -e "Installing Nginx"
-echo -e "----------------------------------------------------\e[0m"
+source common.sh
+
+HEAD "Installing Nginx"
+yum install nginx -y &>>/tmp/roboshop.log
+echo -e "\e[32mdone\e[0m"
 
 
-#yum install nginx -y &>>/tmp/roboshop.log
-
-echo -e "\e[1m---------------------------------------------------"
-echo -e "\e[1;32mSUCCESS"
-echo -e "----------------------------------------------------\e[0m"
 
