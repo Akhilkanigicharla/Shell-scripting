@@ -9,7 +9,7 @@ STAT $?
 
 HEAD "Start Nginx"
 systemctl start nginx &>>/tmp/roboshop.log
-systemctl enable ngnix &>>/tmp/roboshop.log
+systemctl enable nginx &>>/tmp/roboshop.log
 STAT $?
 
 
