@@ -1,9 +1,10 @@
 #!/bin/bash
 
-source /components/common.sh
+source components/common.sh
+set-hostname mongodb
 
 HEAD "Setup MongoDB Yum repo file "
-echo '[mongodb-org-4.2]
+echo '[mongodb-org-4.2]'
 name=MongoDB Repository
 baseurl=https://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/4.2/x86_64/
 gpgcheck=1
@@ -23,4 +24,7 @@ STAT$?
 return
 
 HEAD "Update mangodb config file"
-sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf
+sed -i -e ' s/127.0.0.1/0.0.0.0/' /etc/mongod.conf
+STAT $?
+
+
