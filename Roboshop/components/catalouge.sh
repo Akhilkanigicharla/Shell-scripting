@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source RoboShop/components/common.sh
+source components/common.sh
 rm -f /tmp/roboshop.log
 set-hostname catalogue
 
