@@ -20,7 +20,7 @@ STAT $?
 
 
 HEAD "Start Mongodb service"
-systemctl enable mongodb &>>/tmp/roboshop.log
-systemctl start mongodb &>>/tmp/roboshop.log
+systemctl enable mongod &>>/tmp/roboshop.log
+systemctl start mongod &>>/tmp/roboshop.log
 STAT $?
 
