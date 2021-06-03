@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source /components/components.sh
+source /components/common.sh
 
 HEAD "Setup MongoDB Yum repo file "
 echo '[mongodb-org-4.2]
