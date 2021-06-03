@@ -18,13 +18,11 @@ HEAD "Install MongoDB\t\t"
 yum install -y mongodb-org &>>/tmp/roboshop.log
 STAT $?
 
-
-HEAD "Start Mongodb service\t\t"
-systemctl enable mongod &>>/tmp/roboshop.log
-systemctl start mongod &>>/tmp/roboshop.log
-STAT $?
-
-HEAD"Update listen address in config file"
+HEAD "Update listen address in config file"
 sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf
 STAT $?
 
+HEAD "Start Mongodb service\t\t"
+systemctl enable mongod &>>/tmp/roboshop.log
+systemctl restart mongod &>>/tmp/roboshop.log
+STAT $?
