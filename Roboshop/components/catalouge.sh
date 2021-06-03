@@ -1,8 +1,8 @@
 #!/bin/bash
 
-
-source  components/common.sh
+source components/common.sh
 rm -f /tmp/roboshop.log
+set-hostname catalogue
 
 HEAD "Install nodejs"
 yum install nodejs make gcc-c++ -y &>>/tmp/roboshop.log
