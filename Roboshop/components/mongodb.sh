@@ -19,7 +19,7 @@ yum install -y mongodb-org &>>/tmp/roboshop.log
 STAT $?
 
 
-HEAD "Start Mongodb service"
+HEAD "Start Mongodb service\t\t"
 systemctl enable mongod &>>/tmp/roboshop.log
 systemctl start mongod &>>/tmp/roboshop.log
 STAT $?
